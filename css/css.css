@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+a {
+    color: #300646;
+    text-decoration: none;
+}
+
+header {
+    background-color: #AC43C7;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 51px;
+}
+
+.menu {
+    display: flex;
+    padding-top: 3px;
+    overflow: hidden;
+    background-color: #AC43C7;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+
+}
+
+/*стрелка для возврата*/
+.arrow {
+    display: flex;
+    margin-top: 7px;
+    padding-left: 7px;
+}
+
+.menu_text {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 4px;
+    padding-left: 5px;
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.hh {
+    display: grid;
+    display: grid;
+    max-width: 360px;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+/*иконка домика*/
+.house {
+    padding-top: 3px;
+    margin-left: 90px;
+}
+
+/*иконка с буквой т*/
+.team {
+    margin-left: 60px;
+}
+
+/*сетка для меню*/
+.wrapper_menu {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    width: 360px;
+    display: flex;
+}
+
+/*сетка для уроков*/
+.wrapper_lessons {
+
+    margin: 0 auto;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/*сетка для тем. уроков*/
+.wrapper_team {
+    margin: 0 auto;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-top: 50px;
+}
+
+/*розовый блок (1 урок)*/
+.block_prob {
+    background-color: #E8DDE9;
+    width: 300px;
+    height: 82px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 1px solid rgba(172, 67, 199, 0.37);
+    transition: 0.8s ease;
+}
+
+.block_prob:hover {
+    background-color: #b09ab3;
+    color: #E8DDE9;
+}
+
+/*черная надпись  в розовом блоке*/
+.inscription {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 100px;
+    margin-top: -35px;
+    color: #3c025b;
+}
+
+/*линия сбоку от номера*/
+.inscription::before {
+    content: " ";
+    background: rgba(187, 174, 174, 1);
+    width: 1px;
+    height: 82px;
+    position: absolute;
+    margin-left: -27px;
+    color: #D9D9D9;
+    margin-top: -33px;
+}
+
+/*номер урока*/
+.number {
+    color: #710E67;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 14px;
+}
+
+/*кружок*/
+.border {
+    box-sizing: border-box;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #710E67;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+/*галочка выполнено*/
+.done {
+    display: flex;
+    padding-left: 260px;
+    margin-top: -20px;
+    display: none;
+}
+
+/*розовый блок (1 урок)*/
+.block_team {
+    background-color: #E8DDE9;
+    width: 150px;
+    height: 160px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 1px solid rgba(172, 67, 199, 0.37);
+
+    transition: 0.8s ease;
+}
+
+/*картинка в розовом  блоке*/
+.img_team {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 75px;
+
+}
+.inscr_team {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: 400;
+    padding-top: 18px;
+    font-size: 20px;
+
+}
+
+.block_team:hover {
+    background-color: #b09ab3;
+    color: #E8DDE9;
+}
+
+/* Сетка для инфо */
+.wrapper_info {
+    display: flex;
+    max-width: 340px;
+    align-items: center;
+    padding-left: 13px;
+    flex-direction: column;
+    padding-top: 60px;
+    text-indent: 20px;
+}
+
+.wrapper_info>p {
+    font-size: 15px;
+}
+
+/* сетка для уроков */
+.wrapper_spisok {
+    display: flex;
+    max-width: 355px;
+    align-items: center;
+
+    flex-direction: column;
+    padding-top: 70px;
+    text-indent: 20px;
+}
+
+.menu_text_spisok {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 7px;
+    max-width: 355px;
+    color: #D9D9D9;
+
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: #AC43C7;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #710E67;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    line-height: 1.7;
+
+
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #E8DDE9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+
+.niz {
+    font-weight: 400px;
+}
+
+.team_lesson>p {
+    text-decoration: none;
+}
+.wrapper_team_urok{
+    max-width: 345px;
+}
+.video{
+    padding-left: 7px;
+}

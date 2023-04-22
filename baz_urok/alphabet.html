@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css.css">
+
+   
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="menu">
+                <a href="../index.html"><img class="arrow" src="../img/Arrow 1.png" alt="" /></a>
+                <a class="menu_text" href="">Алфавит (Дактиль)</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper_spisok">
+            <div class="spisok">
+                <div class="dropdown">
+                   
+                    <div class="menu_text_spisok" id="myDropdown" class="dropdown-content">
+
+                        <a href="javascript:l_image('../img/а.jpg', 'A')">А</a>
+                        <a href="javascript:l_image('../img/б.jpg', 'Б')">Б</a>
+                        <a href="javascript:l_image('../img/в.jpg', 'В')">В</a>
+                        <a href="javascript:l_image('../img/г.jpg', 'Г')">Г</a>
+                        <a href="javascript:l_image('../img/д.jpg', 'Д')">Д</a>
+                        <a href="javascript:l_image('../img/е.jpg', 'Е')">Е</a>
+                        <a href="javascript:l_image('../img/ё.jpg', 'Ё')">Ё</a>
+                        <a href="javascript:l_image('../img/ж.jpg', 'Ж')">Ж</a>
+                        <a href="javascript:l_image('../img/з.jpg', 'З')">З</a>
+                        <a href="javascript:l_image('../img/и.jpg', 'И')">И</a>
+                        <a href="javascript:l_image('../img/й.jpg', 'Й')">Й</a>
+                        <a href="javascript:l_image('../img/к.jpg', 'К')">К</a>
+                        <a href="javascript:l_image('../img/л.jpg', 'Л')">Л</a>
+                        <a href="javascript:l_image('../img/м.jpg', 'М')">М</a>
+                        <a href="javascript:l_image('../img/н.jpg', 'Н')">Н</a>
+                        <a href="javascript:l_image('../img/о.jpg', 'О')">О</a>
+                        <a href="javascript:l_image('../img/п.jpg', 'П')">П</a>
+                        <a href="javascript:l_image('../img/р.jpg', 'Р')">Р</a>
+                        <a href="javascript:l_image('../img/с.jpg', 'С')">С</a>
+                        <a href="javascript:l_image('../img/т.jpg', 'Т')">Т</a>
+                        <a href="javascript:l_image('../img/у.jpg', 'У')">У</a>
+                        <a href="javascript:l_image('../img/ф.jpg', 'Ф')">Ф</a>
+                        <a href="javascript:l_image('../img/х.jpg', 'Х')">Х</a>
+                        <a href="javascript:l_image('../img/ц.jpg', 'Ц')">Ц</a>
+                        <a href="javascript:l_image('../img/ч.jpg', 'Ч')">Ч</a>
+                        <a href="javascript:l_image('../img/р.jpg', 'Ш')">Ш</a>
+                        <a href="javascript:l_image('../img/с.jpg', 'Щ')">Щ</a>
+                        <a href="javascript:l_image('../img/т.jpg', 'Ъ')">Ъ</a>
+                        <a href="javascript:l_image('../img/у.jpg', 'Ы')">Ы</a>
+                        <a href="javascript:l_image('../img/ф.jpg', 'Ь')">Ь</a>
+                        <a href="javascript:l_image('../img/х.jpg', 'Э')">Э</a>
+                        <a href="javascript:l_image('../img/ц.jpg', 'Ю')">Ю</a>
+                        <a href="javascript:l_image('../img/ч.jpg', 'Я')">Я</a>
+                    </div>
+                    <img src="../img/а.jpg" name="example_img"><br>
+                    <div class="niz" id="example_text">А</div>
+
+
+                    <script>
+                        /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+                        window.onclick = function (event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+
+                    </script>
+                    <script type="text/javascript">
+                        function l_image(a, b) {
+                            document.example_img.src = a;
+                            document.getElementById("example_text").innerHTML = b;
+                        }
+                    </script>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>

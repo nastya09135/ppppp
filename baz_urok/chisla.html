@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css.css">
+
+   
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="menu">
+                <a href="../index.html"><img class="arrow" src="../img/Arrow 1.png" alt="" /></a>
+                <a class="menu_text" href="">Алфавит (Дактиль)</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper_spisok">
+            <div class="spisok">
+                <div class="dropdown">
+                   
+                    <div class="menu_text_spisok" id="myDropdown" class="dropdown-content">
+                        <a href="javascript:l_image('../img/й.jpg', '0')">0</a>
+                        <a href="javascript:l_image('../img/а.jpg', '1')">1</a>
+                        <a href="javascript:l_image('../img/б.jpg', '2')">2</a>
+                        <a href="javascript:l_image('../img/в.jpg', '3')">3</a>
+                        <a href="javascript:l_image('../img/г.jpg', '4')">4</a>
+                        <a href="javascript:l_image('../img/д.jpg', '5')">5</a>
+                        <a href="javascript:l_image('../img/е.jpg', '6')">6</a>
+                        <a href="javascript:l_image('../img/ё.jpg', '7')">7</a>
+                        <a href="javascript:l_image('../img/ж.jpg', '8')">8</a>
+                        <a href="javascript:l_image('../img/з.jpg', '9')">9</a>
+                        <a href="javascript:l_image('../img/и.jpg', '10')">10</a>
+                        
+                    </div>
+                    <img src="../img/а.jpg" name="example_img"><br>
+                    <div class="niz" id="example_text">0</div>
+
+
+                    <script>
+                        /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+                        window.onclick = function (event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+
+                    </script>
+                    <script type="text/javascript">
+                        function l_image(a, b) {
+                            document.example_img.src = a;
+                            document.getElementById("example_text").innerHTML = b;
+                        }
+                    </script>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
