@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/css.css">
+<style>
+     
+     input {
+            font-size: 25px;
+            text-indent: 3px;
+        }
+</style>
 
-   
 </head>
 
 <body>
@@ -17,32 +23,34 @@
         <div class="wrapper">
             <div class="menu">
                 <a href="../index.html"><img class="arrow" src="../img/Arrow 1.png" alt="" /></a>
-                <a class="menu_text" href="">Алфавит (Дактиль)</a>
+                <a class="menu_text menu_text2" href="">Числа</a>
             </div>
         </div>
     </header>
+
+    </div>
+    </section>
     <section>
         <div class="wrapper_spisok">
             <div class="spisok">
-                <div class="dropdown">
-                   
-                    <div class="menu_text_spisok" id="myDropdown" class="dropdown-content">
-                        <a href="javascript:l_image('../img/й.jpg', '0')">0</a>
-                        <a href="javascript:l_image('../img/а.jpg', '1')">1</a>
-                        <a href="javascript:l_image('../img/б.jpg', '2')">2</a>
-                        <a href="javascript:l_image('../img/в.jpg', '3')">3</a>
-                        <a href="javascript:l_image('../img/г.jpg', '4')">4</a>
-                        <a href="javascript:l_image('../img/д.jpg', '5')">5</a>
-                        <a href="javascript:l_image('../img/е.jpg', '6')">6</a>
-                        <a href="javascript:l_image('../img/ё.jpg', '7')">7</a>
-                        <a href="javascript:l_image('../img/ж.jpg', '8')">8</a>
-                        <a href="javascript:l_image('../img/з.jpg', '9')">9</a>
-                        <a href="javascript:l_image('../img/и.jpg', '10')">10</a>
-                        
-                    </div>
-                    <img src="../img/а.jpg" name="example_img"><br>
-                    <div class="niz" id="example_text">0</div>
+                <div class="">
 
+                    <div class="menu_text_spisok" id="myDropdown" class="dropdown-content">
+
+
+                        <a href="javascript:l_image('../img/1.png', '1')">1</a>
+                        <a href="javascript:l_image('../img/2.png', '2')">2</a>
+                        <a href="javascript:l_image('../img/3.png', '3')">3</a>
+                        <a href="javascript:l_image('../img/4.png', '4')">4</a>
+                        <a href="javascript:l_image('../img/5.png', '5')">5</a>
+                        <a href="javascript:l_image('../img/6.png', '6')">6</a>
+                        <a href="javascript:l_image('../img/7.png', '7')">7</a>
+                        <a href="javascript:l_image('../img/8.png', '8')">8</a>
+                        <a href="javascript:l_image('../img/9.png', '9')">9</a>
+                        <a href="javascript:l_image('../img/10.png', '10')">10</a>
+                    </div>
+                    <img src="../img/1.png" name="example_img"><br>
+                    <div class="niz" id="example_text">0</div>
 
                     <script>
                         /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
@@ -72,6 +80,149 @@
                     </script>
                 </div>
             </div>
+    </section>
+    <section>
+        <div class="info">
+            <div class="wrapper_info">
+                <p>Цифры, в русской жестов языке, одна из самых лёгких тем.</p><br>
+                <p></p>
+
+                <p>
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper_info">
+            <div id="" class="menu_text_spisok" style="max-width: 340px;">
+                <div class="">
+                 
+                    <div class="menu_text_spisok">
+                        <div class="menu_text_spisok_chisla">
+                            <input type="button" onclick="videoChange(0)" value="11">
+                            <input type="button" onclick="videoChange(1)" value="12">
+                            <input type="button" onclick="videoChange(2)" value="13">
+                            <input type="button" onclick="videoChange(3)" value="14">
+                            <input type="button" onclick="videoChange(4)" value="15">
+                            <input type="button" onclick="videoChange(0)" value="16">
+                            <input type="button" onclick="videoChange(1)" value="17">
+                            <input type="button" onclick="videoChange(2)" value="18">
+                            <input type="button" onclick="videoChange(3)" value="19">
+                            <input type="button" onclick="videoChange(4)" value="20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <video class="video" width="350" height="300" controls="controls" id="video" autoplay>
+                <source src="../mp4/animal/cat.mp4" id="source">
+            </video>
+            <script>
+                var videos = [
+                    "../mp4/animal/cat.mp4",
+                    "../mp4/animal/dog.mp4",
+                    "../mp4/animal/baran.mp4",
+                    "../mp4/animal/cow.mp4",
+                    "../mp4/animal/humster.mp4",
+                    "../mp4/animal/bear.mp4",
+                    "../mp4/animal/wolf.mp4",
+                    "../mp4/animal/ejik.mp4",
+                    "../mp4/animal/lisa.mp4",
+                    "../mp4/animal/belka.mp4"
+                ];
+    
+                function videoChange(id) {
+    
+                    var video = document.getElementById("video");
+                    var source = document.getElementById("source");
+    
+                    source.src = videos[id];
+                    video.appendChild(source);
+    
+                    video.load();
+                    video.pause();
+                }
+            </script>
+    
+    
+            <script>
+                new ItcAccordion(document.querySelector('.accordion'), {
+                    alwaysOpen: true
+                });
+            </script>
+        </div>
+        <script>
+            /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+    
+        </script>
+        
+    </section>
+  <!--  <section>
+        <div class="wrapper_spisok">
+            <div class="spisok">
+                <div class="">
+                   
+                    <div class="menu_text_spisok" id="myDropdown" class="dropdown-content">
+
+                        
+                        <a href="javascript:l_image('../img/1.png', '11')">11</a>
+                        <a href="javascript:l_image('../img/2.png', '12')">12</a>
+                        <a href="javascript:l_image('../img/3.png', '13')">13</a>
+                        <a href="javascript:l_image('../img/4.png', '14')">14</a>
+                        <a href="javascript:l_image('../img/5.png', '15')">15</a>
+                        <a href="javascript:l_image('../img/6.png', '16')">16</a>
+                        <a href="javascript:l_image('../img/7.png', '17')">17</a>
+                        <a href="javascript:l_image('../img/8.png', '18')">18</a>
+                        <a href="javascript:l_image('../img/9.png', '19')">19</a>
+                        <a href="javascript:l_image('../img/10.png', '20')">20</a>
+                    </div>
+                    <img src="../img/11.png" name="example_img"><br>
+                    <div class="niz" id="example_text">11</div>
+                   
+                    <script>
+                        /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+                        window.onclick = function (event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+
+                    </script>
+                    <script type="text/javascript">
+                        function l_image(a, b) {
+                            document.example_img.src = a;
+                            document.getElementById("example_text").innerHTML = b;
+                        }
+                    </script>-->
+        </div>
+        </div>
     </section>
 </body>
 

@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/css.css">
 
-   
+
 </head>
 
 <body>
@@ -17,15 +17,19 @@
         <div class="wrapper">
             <div class="menu">
                 <a href="../index.html"><img class="arrow" src="../img/Arrow 1.png" alt="" /></a>
-                <a class="menu_text" href="">Алфавит (Дактиль)</a>
+                <a class="menu_text menu_text2" href="">Алфавит (Дактиль)</a>
             </div>
         </div>
     </header>
+ 
+            
+         
+
     <section>
         <div class="wrapper_spisok">
             <div class="spisok">
                 <div class="dropdown">
-                   
+
                     <div class="menu_text_spisok" id="myDropdown" class="dropdown-content">
 
                         <a href="javascript:l_image('../img/а.jpg', 'A')">А</a>
@@ -63,36 +67,37 @@
                         <a href="javascript:l_image('../img/ч.jpg', 'Я')">Я</a>
                     </div>
                     <img src="../img/а.jpg" name="example_img"><br>
-                    <div class="niz" id="example_text">А</div>
-
-
-                    <script>
-                        /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
-                        function myFunction() {
-                            document.getElementById("myDropdown").classList.toggle("show");
-                        }
-                        // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
-                        window.onclick = function (event) {
-                            if (!event.target.matches('.dropbtn')) {
-                                var dropdowns = document.getElementsByClassName("dropdown-content");
-                                var i;
-                                for (i = 0; i < dropdowns.length; i++) {
-                                    var openDropdown = dropdowns[i];
-                                    if (openDropdown.classList.contains('show')) {
-                                        openDropdown.classList.remove('show');
-                                    }
-                                }
-                            }
-                        }
-
-                    </script>
-                    <script type="text/javascript">
-                        function l_image(a, b) {
-                            document.example_img.src = a;
-                            document.getElementById("example_text").innerHTML = b;
-                        }
-                    </script>
                 </div>
+
+                <div class="niz" id="example_text">А</div>
+                <br>
+                <div class="info">
+                    <div class="wrapper_info_h">
+                        <p>Дактиль - вспомогательная система русского жестового языка, в
+                            которой каждому жесту одной руки (обычно неподвижной правой,
+                            согнутой в локте) соответствует буква русского языка; многие
+                            знаки внешне похожи на соответствующие буквы русского алфавита.</p><br>
+                        <p>Дактилология отличается от обычных жестов, означающих понятие
+                            или комплекс понятий. Используется для проговаривания
+                            вспомогательных слов («а», «ну», «бы», «эх»), слов, у которых
+                            отсутствует жестовое представление («дефрагментация», «геном»,
+                            топонимов и личных имён), а также в случае, если нужно
+                            прояснить значение того или иного слова.</p><br>
+
+                    </div>
+                </div>
+
+                <script>
+
+
+                </script>
+                <script type="text/javascript">
+                    function l_image(a, b) {
+                        document.example_img.src = a;
+                        document.getElementById("example_text").innerHTML = b;
+                    }
+                </script>
+
             </div>
     </section>
 </body>

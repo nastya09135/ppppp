@@ -12,7 +12,7 @@
             padding-left: 10px;
             margin-left: auto;
             margin-right: auto;
-
+           
         }
 
         body {
@@ -88,8 +88,7 @@
         .accordion__item:not(.accordion__item_show) .accordion__body {
             display: none;
         }
-
-        input {
+        input{
             font-size: 15px;
         }
     </style>
@@ -180,7 +179,7 @@
         <div class="wrapper">
             <div class="menu">
                 <a href="../team.html"><img class="arrow" src="../img/Arrow 1.png" alt="" /></a>
-                <a class="menu_text " href="">Животные</a>
+                <a class="menu_text" href="">Еда и напитки</a>
             </div>
         </div>
     </header>
@@ -191,65 +190,103 @@
         <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
             <div class="accordion__item">
                 <div class="accordion__header">
-                    Домашние животные
+                   Овощи
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(0)" value="Кошка"><br>
-                        <input type="button" onclick="videoChange(1)" value="Собака"><br>
-                        <input type="button" onclick="videoChange(2)" value="Баран"><br>
-                        <input type="button" onclick="videoChange(3)" value="Корова"><br>
-                        <input type="button" onclick="videoChange(4)" value="Хомяк"><br>
+                        <input type="button" onclick="videoChange(0)" value="Помидор"><br>
+                        <input type="button" onclick="videoChange(1)" value="Морковка"><br>
+                        <input type="button" onclick="videoChange(2)" value="Огурец"><br>
+                        <input type="button" onclick="videoChange(3)" value="Лук"><br>
+                        <input type="button" onclick="videoChange(4)" value="Свекла"><br>
                     </div>
                 </div>
             </div>
             <div class="accordion__item">
                 <div class="accordion__header">
-                    Дикие животные
+                    Фрукты
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(5)" value="Медведь"><br>
-                        <input type="button" onclick="videoChange(6)" value="Волк"><br>
-                        <input type="button" onclick="videoChange(7)" value="Ёж"><br>
-                        <input type="button" onclick="videoChange(8)" value="Лиса"><br>
-                        <input type="button" onclick="videoChange(9)" value="Белка"><br>
+                        <input type="button" onclick="videoChange(5)" value="Яблоко"><br>
+                        <input type="button" onclick="videoChange(6)" value="Апельсин"><br>
+                        <input type="button" onclick="videoChange(7)" value="Киви"><br>
+                        <input type="button" onclick="videoChange(8)" value="Банан"><br>
+                        <input type="button" onclick="videoChange(9)" value="Мандарин"><br>
                     </div>
                 </div>
             </div>
-
-
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    Блюда
+                </div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <input type="button" onclick="videoChange(10)" value="Картошка фри"><br>
+                        <input type="button" onclick="videoChange(11)" value="Венская сосиска"><br>
+                        <input type="button" onclick="videoChange(12)" value="Отбивная"><br>
+                        <input type="button" onclick="videoChange(13)" value="Спагетти"><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+            <div class="accordion__header">
+                Напитки
+            </div>
+            <div class="accordion__body">
+                <div class="accordion__content">
+                    <input type="button" onclick="videoChange(14)" value="Вода"><br>
+                    <input type="button" onclick="videoChange(15)" value="Сок"><br>
+                    <input type="button" onclick="videoChange(16)" value="Чай"><br>
+                    <input type="button" onclick="videoChange(17)" value="Кофе"><br>
+                    <input type="button" onclick="videoChange(18)" value="Коктейль"><br>
+                    <input type="button" onclick="videoChange(19)" value="Алкоголь"><br>
+                </div>
+            </div>
         </div>
-        <video class="video" width="350" height="300" controls="controls" id="video" autoplay>
-            <source src="../mp4/animal/cat.mp4" id="source">
-        </video>
-        <script>
-            var videos = [
-                "../mp4/animal/cat.mp4",
-                "../mp4/animal/dog.mp4",
-                "../mp4/animal/baran.mp4",
-                "../mp4/animal/cow.mp4",
-                "../mp4/animal/humster.mp4",
-                "../mp4/animal/bear.mp4",
-                "../mp4/animal/wolf.mp4",
-                "../mp4/animal/ejik.mp4",
-                "../mp4/animal/lisa.mp4",
-                "../mp4/animal/belka.mp4"
-            ];
+        </div>
+ <video class="video"  width="350" height="300" controls="controls" id="video"  autoplay>
+                <source src="../mp4/food/pomidor.mp4" id="source">
+               
+            </video>
+<script>
+    var videos = [
+    "../mp4/food/pomidor.mp4",// 0
+    "../mp4/food/morkov.mp4",// 1
+    "../mp4/food/cucumber.mp4",// 2
+    "../mp4/food/luk.mp4",// 3
+    "../mp4/food/svekla.mp4",// 4
+    "../mp4/food/apple.mp4",// 5
+    "../mp4/food/apelsin.mp4",// 6
+    "../mp4/food/kivi.mp4",// 7
+    "../mp4/food/banana.mp4",// 8
+    "../mp4/food/mandarin.mp4",// 9
+    "../mp4/food/freeeeeeeeeeeee.mp4",// 10
+    "../mp4/food/venskaa_sosiska.mp4",// 11
+    "../mp4/food/otbiv_kotlet.mp4",// 12
+    "../mp4/food/spagetti.mp4",// 13
+    "../mp4/food/voda.mp4",// 14
+    "../mp4/food/frukt_juse.mp4",// 15
+    "../mp4/food/tea.mp4",// 16
+    "../mp4/food/coffe.mp4",// 17
+    "../mp4/food/koktel.mp4",// 18
+    "../mp4/food/alko.mp4"// 19
+    
+];
 
-            function videoChange(id) {
+function videoChange(id) {
 
-                var video = document.getElementById("video");
-                var source = document.getElementById("source");
+    var video = document.getElementById("video");
+    var source = document.getElementById("source");
 
-                source.src = videos[id];
-                video.appendChild(source);
+    source.src = videos[id];
+    video.appendChild(source);
 
-                video.load();
-                video.pause();
-            }
-        </script>
-
+    video.load();
+    video.pause();
+}
+</script>
+        
 
         <script>
             new ItcAccordion(document.querySelector('.accordion'), {
@@ -277,8 +314,8 @@
         }
 
     </script>
-
-
+   
+    
 </body>
 
 </html>

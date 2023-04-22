@@ -174,7 +174,7 @@
     <header>
         <div class="wrapper">
             <div class="menu">
-                <a href="../team.html"><img class="arrow" src="../img/Arrow 1.png" alt="" /></a>
+                <a href="../index.html"><img class="arrow" src="../img/Arrow 1.png" alt="" /></a>
                 <a class="menu_text" href="">Распространённые фразы</a>
             </div>
         </div>
@@ -190,9 +190,9 @@
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(0)" value="Пальто"><br>
-                        <input type="button" onclick="videoChange(1)" value="Шарф"><br>
-                        <input type="button" onclick="videoChange(2)" value="Варежки"><br>
+                        <input type="button" onclick="videoChange(0)" value="Привет!"><br>
+                        <input type="button" onclick="videoChange(1)" value="Здравствуй"><br>
+                        <input type="button" onclick="videoChange(2)" value="Добро пожаловать"><br>
 
                     </div>
                 </div>
@@ -203,11 +203,10 @@
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(3)" value="Рубашка"><br>
-                        <input type="button" onclick="videoChange(4)" value="Футболка"><br>
-                        <input type="button" onclick="videoChange(5)" value="Брюки"><br>
-                        <input type="button" onclick="videoChange(9)" value="Носки"><br>
-                        <input type="button" onclick="videoChange(10)" value="Пижама"><br>
+                        <input type="button" onclick="videoChange(3)" value="Пока"><br>
+                        <input type="button" onclick="videoChange(4)" value="До свидания"><br>
+                        <input type="button" onclick="videoChange(5)" value="Увидимся!"><br>
+                      
                     </div>
                 </div>
             </div>
@@ -217,9 +216,25 @@
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(6)" value="Ботинки"><br>
-                        <input type="button" onclick="videoChange(7)" value="Резиновые сапоги"><br>
-                        <input type="button" onclick="videoChange(8)" value="Кроссовки"><br>
+                        <input type="button" onclick="videoChange(6)" value="Как дела?"><br>
+                        <input type="button" onclick="videoChange(7)" value="Вам помочь?"><br>
+                        <input type="button" onclick="videoChange(8)" value="Сколько вам лет?"><br>
+                        <input type="button" onclick="videoChange(9)" value="Что вы делаете?"><br>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    Общие фразы
+                </div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <input type="button" onclick="videoChange(10)" value="С днём рождения!"><br>
+                        <input type="button" onclick="videoChange(11)" value="Ты хорошо выглядишь"><br>
+                        <input type="button" onclick="videoChange(12)" value="Пойман с поличным"><br>
+                        <input type="button" onclick="videoChange(13)" value="Слава Богу"><br>
+                        <input type="button" onclick="videoChange(14)" value="Время от времени"><br>
                        
                     </div>
                 </div>
@@ -228,17 +243,21 @@
 
 <script>
     var videos = [
-    "../mp4/palto.mp4",// 0
-    "../mp4/shurf.mp4",// 1
-    "../mp4/varejki.mp4",// 2
-    "../mp4/rubashka.mp4",// 3
-    "../mp4/futbolka.mp4",// 4
-    "../mp4/bruki.mp4",// 5
-    "../mp4/botinki.mp4",// 6
-    "../mp4/rez_sapog.mp4",// 7
-    "../mp4/krossovki.mp4",// 8
-    "../mp4/noski.mp4",// 9
-    "../mp4/pijama.mp4"// 10
+    "../mp4//rasp_fraz/privet.mp4",// 0
+    "../mp4/rasp_fraz/zdravstvuiy.mp4",// 1
+    "../mp4//rasp_fraz/dobr_pojal.mp4",// 2
+    "../mp4/rasp_fraz/poka.mp4",// 3
+    "../mp4//rasp_fraz/do_svid.mp4",// 4
+    "../mp4/rasp_fraz/uvid.mp4",// 5
+    "../mp4//rasp_fraz/kak_dela.mp4",// 6
+    "../mp4/rasp_fraz/vam_pomoch.mp4",// 7
+    "../mp4//rasp_fraz/skolso_vam_let.mp4",// 8
+    "../mp4/rasp_fraz/chto_delaet.mp4",// 9
+    "../mp4//rasp_fraz/s_dnem_rojden.mp4",// 10
+    "../mp4/rasp_fraz/horosho_vugl.mp4",// 11
+    "../mp4//rasp_fraz/poman_s_polich.mp4",// 12
+    "../mp4/rasp_fraz/slava_bogu.mp4",// 13
+    "../mp4/rasp_fraz/vrema_ot_vrem.mp4"// 14
 ];
 
 function videoChange(id) {
@@ -254,7 +273,7 @@ function videoChange(id) {
 }
 </script>
         <video class="video"  width="350" height="300" controls="controls" id="video" autoplay>
-            <source src="../mp4/palto.mp4" id="source">
+            <source src="../mp4/rasp_fraz/privet.mp4" id="source">
         </video>
       
 
