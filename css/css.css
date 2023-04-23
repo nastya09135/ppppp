@@ -18,6 +18,7 @@ header {
     position: fixed;
     top: 0;
     height: 51px;
+    
 }
 .mmenu{
 
@@ -81,6 +82,7 @@ header {
     position: sticky;
     top: 0;
     overflow: hidden;
+
 
 }
 /*сетка для меню*/
@@ -251,6 +253,17 @@ header {
     padding-left: 13px;
     flex-direction: column;
     padding-top: 60px;
+    text-indent: 20px;
+}
+.wrapper_inf {
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--bs-font-sans-serif);
+    max-width: 340px;
+    align-items: center;
+    padding-left: 13px;
+    flex-direction: column;
+    padding-top: 30px;
     text-indent: 20px;
 }
 
