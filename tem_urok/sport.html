@@ -191,113 +191,91 @@
         <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
             <div class="accordion__item">
                 <div class="accordion__header">
-                    Человек - Техника
+                    Летний спорт
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(0)" value="Водитель"><br>
-                        <input type="button" onclick="videoChange(1)" value="Инженер-строитель"><br>
-                        <input type="button" onclick="videoChange(2)" value="Сварщик"><br>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__header">
-                    Человек - Природа
-                </div>
-                <div class="accordion__body">
-                    <div class="accordion__content">
-                        <input type="button" onclick="videoChange(3)" value="Ветеринар"><br>
-                        <input type="button" onclick="videoChange(4)" value="Фермер"><br>
-                        <input type="button" onclick="videoChange(6)" value="Геолог"><br>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__header">
-                    Человек - Знаковая система
-                </div>
-                <div class="accordion__body">
-                    <div class="accordion__content">
-                        <input type="button" onclick="videoChange(7)" value="Программист"><br>
-                        <input type="button" onclick="videoChange(8)" value="Бухгалтер"><br>
-                        <input type="button" onclick="videoChange(9)" value="Редактор"><br>
+                        <input type="button" onclick="videoChange(0)" value="Велоспорт"><br>
+                        <input type="button" onclick="videoChange(1)" value="Парусный спорт"><br>
+                        <input type="button" onclick="videoChange(2)" value="Гольф"><br>
+                        <input type="button" onclick="videoChange(3)" value="Серфинг"><br>
+                        <input type="button" onclick="videoChange(4)" value="Футбол"><br>
 
                     </div>
                 </div>
             </div>
             <div class="accordion__item">
                 <div class="accordion__header">
-                    Человек - Художественный образ
+                    Зимний спорт
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(10)" value="Актёр"><br>
-                        <input type="button" onclick="videoChange(11)" value="Художник"><br>
-                        <input type="button" onclick="videoChange(12)" value="Дизайнер"><br>
+                        <input type="button" onclick="videoChange(5)" value="Фигурное катание"><br>
+                        <input type="button" onclick="videoChange(6)" value="Хоккей"><br>
+                        <input type="button" onclick="videoChange(7)" value="Фристайл"><br>
+
                     </div>
                 </div>
             </div>
             <div class="accordion__item">
-            <div class="accordion__header">
-                Человек - Человек
-            </div>
-            <div class="accordion__body">
-                <div class="accordion__content">
-                    <input type="button" onclick="videoChange(13)" value="Учитель"><br>
-                    <input type="button" onclick="videoChange(14)" value="Врач"><br>
-                    <input type="button" onclick="videoChange(15)" value="Официант"><br>
+                <div class="accordion__header">
+                    Всесезонный спорт
+                </div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <input type="button" onclick="videoChange(8)" value="Каратэ"><br>
+                        <input type="button" onclick="videoChange(9)" value="Настольный теннис"><br>
+                        <input type="button" onclick="videoChange(10)" value="Волейбол"><br>
+                        <input type="button" onclick="videoChange(11)" value="Баскетбол"><br>
+
+                    </div>
                 </div>
             </div>
+            
+            
         </div>
-        </div>
-        </div>
-        <video class="video" width="350" height="300" controls="controls" id="video" autoplay>
-            <source src="../mp4/vodit.mp4" id="source">
+    </div>
+    <video class="video" width="350" height="300" controls="controls" id="video" autoplay>
+        <source src="../mp4/sport/velo.mp4" id="source">
 
-        </video>
-        <script>
-            var videos = [
-                "../mp4/vodit.mp4",// 0
-                "../mp4/stoit.mp4",// 1
-                "../mp4/svar.mp4",// 2
-                "../mp4/vet.mp4",// 3
-                "../mp4/fermer.mp4",// 4
-                "../mp4/geo.mp4",// 5
-                "../mp4/apelsin.mp4",// 6
-                "../mp4/programm.mp4",// 7
-                "../mp4/buh.mp4",// 8
-                "../mp4/redakt.mp4",// 9
-                "../mp4/acter.mp4",// 10
-                "../mp4/hudo.mp4",// 11
-                "../mp4/desin.mp4",// 12
-                "../mp4/teacher.mp4",// 13
-                "../mp4/vrach.mp4",// 14
-                "../mp4/oficiant.mp4"// 15
-             
-            ];
-
-            function videoChange(id) {
-
-                var video = document.getElementById("video");
-                var source = document.getElementById("source");
-
-                source.src = videos[id];
-                video.appendChild(source);
-
-                video.load();
-                video.pause();
-            }
-        </script>
+    </video>
+    <script>
+        var videos = [
+            "../mp4/sport/velo.mp4",// 0
+            "../mp4/sport/parus.mp4",// 1
+            "../mp4/sport/golf.mp4",// 2
+            "../mp4/sport/serf.mp4",// 3
+            "../mp4/sport/futbol.mp4",// 4
+            "../mp4/sport/figur_kot.mp4",// 5
+            "../mp4/sport/hokkey.mp4",// 6
+            "../mp4/sport/fristayl.mp4",// 7
+            "../mp4/sport/karate.mp4",// 8
+            "../mp4/sport/nast_tennis.mp4",// 9
+            "../mp4/sport/voleybol.mp4",// 10
+            "../mp4/sport/bascet.mp4"// 11
 
 
-        <script>
-            new ItcAccordion(document.querySelector('.accordion'), {
-                alwaysOpen: true
-            });
-        </script>
+        ];
+
+        function videoChange(id) {
+
+            var video = document.getElementById("video");
+            var source = document.getElementById("source");
+
+            source.src = videos[id];
+            video.appendChild(source);
+
+            video.load();
+            video.pause();
+        }
+    </script>
+
+
+    <script>
+        new ItcAccordion(document.querySelector('.accordion'), {
+            alwaysOpen: true
+        });
+    </script>
     </div>
     <script>
         /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
