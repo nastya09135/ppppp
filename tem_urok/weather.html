@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Погода</title>
+    <title>Еда</title>
     <link rel="stylesheet" href="../css/css.css">
     <style>
         .accordion {
@@ -12,7 +12,7 @@
             padding-left: 10px;
             margin-left: auto;
             margin-right: auto;
-           
+
         }
 
         body {
@@ -88,7 +88,8 @@
         .accordion__item:not(.accordion__item_show) .accordion__body {
             display: none;
         }
-        input{
+
+        input {
             font-size: 15px;
         }
     </style>
@@ -190,15 +191,15 @@
         <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
             <div class="accordion__item">
                 <div class="accordion__header">
-                    Времена года
+                   Времена года
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(0)" value="Лето"><br>
-                        <input type="button" onclick="videoChange(1)" value="Осень"><br>
-                        <input type="button" onclick="videoChange(2)" value="Зима"><br>
-                        <input type="button" onclick="videoChange(3)" value="Весна"><br>
-                        
+                        <input type="button" onclick="videoChange(0)" value="Помидор"><br>
+                        <input type="button" onclick="videoChange(1)" value="Морковка"><br>
+                        <input type="button" onclick="videoChange(2)" value="Огурец"><br>
+                        <input type="button" onclick="videoChange(3)" value="Лук"><br>
+                       
                     </div>
                 </div>
             </div>
@@ -208,51 +209,57 @@
                 </div>
                 <div class="accordion__body">
                     <div class="accordion__content">
-                        <input type="button" onclick="videoChange(4)" value="Ветер"><br>
-                        <input type="button" onclick="videoChange(5)" value="Дождь"><br>
-                        <input type="button" onclick="videoChange(6)" value="Туман"><br>
-                        <input type="button" onclick="videoChange(7)" value="Снегопад"><br>
-                        <input type="button" onclick="videoChange(8)" value="Молния"><br>
-                        <input type="button" onclick="videoChange(9)" value="Радуга"><br>
-                        
+                        <input type="button" onclick="videoChange(5)" value="Яблоко"><br>
+                        <input type="button" onclick="videoChange(6)" value="Апельсин"><br>
+                        <input type="button" onclick="videoChange(7)" value="Киви"><br>
+                        <input type="button" onclick="videoChange(8)" value="Банан"><br>
+                        <input type="button" onclick="videoChange(9)" value="Мандарин"><br>
                     </div>
                 </div>
             </div>
-           
-         
+            
+            
         </div>
- <video class="video"  width="350" height="300" controls="controls" id="video"  autoplay>
-                <source src="../mp4/pogod/leto.mp4" id="source">
-               
-            </video>
-<script>
-    var videos = [
-    "../mp4/pogod/leto.mp4",// 0
-    "../mp4/pogod/osen.mp4",// 1
-    "../mp4/pogod/zima.mp4",// 2
-    "../mp4/pogod/vesna.mp4",// 3
-    "../mp4/pogod/veter.mp4",// 4
-    "../mp4/pogod/rain.mp4",// 5
-    "../mp4/pogod/tuman.mp4",// 6
-    "../mp4/pogod/snegopad.mp4",// 7
-    "../mp4/pogod/molnia.mp4",// 8
-    "../mp4/pogod/raduga.mp4",// 9
+        <video class="video" width="350" height="300" controls="controls" id="video" autoplay>
+            <source src="../mp4/pomidor.mp4" id="source">
 
-];
+        </video>
+        <script>
+            var videos = [
+                "../mp4/pomidor.mp4",// 0
+                "../mp4/morkov.mp4",// 1
+                "../mp4/cucumber.mp4",// 2
+                "../mp4/luk.mp4",// 3
+                "../mp4/svekla.mp4",// 4
+                "../mp4/apple.mp4",// 5
+                "../mp4/apelsin.mp4",// 6
+                "../mp4/kivi.mp4",// 7
+                "../mp4/banana.mp4",// 8
+                "../mp4/mandarin.mp4",// 9
+                "../mp4/freeeeeeeeeeeee.mp4",// 10
+                "../mp4/venskaa_sosiska.mp4",// 11
+                "../mp4/otbiv_kotlet.mp4",// 12
+                "../mp4/voda.mp4",// 13
+                "../mp4/frukt_juse.mp4",// 14
+                "../mp4/tea.mp4",// 15
+                "../mp4/coffe.mp4",// 16
+                "../mp4/koktel.mp4",// 17
+                "../mp4/alko.mp4"// 18
+            ];
 
-function videoChange(id) {
+            function videoChange(id) {
 
-    var video = document.getElementById("video");
-    var source = document.getElementById("source");
+                var video = document.getElementById("video");
+                var source = document.getElementById("source");
 
-    source.src = videos[id];
-    video.appendChild(source);
+                source.src = videos[id];
+                video.appendChild(source);
 
-    video.load();
-    video.pause();
-}
-</script>
-        
+                video.load();
+                video.pause();
+            }
+        </script>
+
 
         <script>
             new ItcAccordion(document.querySelector('.accordion'), {
@@ -280,8 +287,8 @@ function videoChange(id) {
         }
 
     </script>
-   
-    
+
+
 </body>
 
 </html>
